@@ -1,1 +1,1 @@
-# se2-polimi-bresich
+# Software Engineering 2
