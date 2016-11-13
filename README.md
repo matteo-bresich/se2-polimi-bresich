@@ -5,4 +5,4 @@ This is the project for the Software Engineering 2 course of M.Sc. course of Com
 * Matteo Bresich
 
 ## Deliverables
-**RASD**: [Release version here] (https://github.com/matteo-bresich/se2-polimi-bresich/tree/develop/Release/RASD.pdf)
+**RASD**: [Release version here] (https://github.com/matteo-bresich/se2-polimi-bresich/tree/master/Release/RASD.pdf)
