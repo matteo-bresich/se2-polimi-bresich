@@ -1,0 +1,93 @@
+\subsubsection{\gSystemDiscounts}
+\begin{itemize}
+	\item {[}D1{]} The old payment system can be changed for adding discounts and fees.
+	\item {[}D2{]} The cost of the service is calculated per hour (ex. 3,5h).
+	\item {[}D3{]} The car provides occupied spots with weight sensors under seats.
+	\item {[}R1{]} If the System detecs that the user tooks at least two other passengers onto the car for at least half of the trip (in time term when the machine is in motion), the system applies a discount of 10\% on the last ride.
+\end{itemize}
+\subsubsection{\gSystemFees}
+\begin{itemize}
+	\item {[}D1{]} The old payment system can be changed for adding discounts and fees.
+	\item {[}D2{]} The old system has APIs to generate a payment.
+	\item {[}D3{]} Access to APIs is provided only using the HTTPS protocol.
+	\item {[}R1{]} If a car is not picked-up within one hour from the reservation the user pays a fee of 1 EUR.
+\end{itemize}
+\subsubsection{\gSystemDistribution}
+\begin{itemize}
+	\item {[}D1{]} The old system keeps track of the current cars' locations.
+	\item {[}D2{]} The old system generate which cars has to be moved, the initial and the final location for the auto.
+	\item {[}R1{]} The System has to generate a message to an Handyman Operator that contains: which car has to be moved, the initial and the final location for the auto.
+\end{itemize}	
+\subsubsection{\gSystemShare}
+\begin{itemize}
+	\item {[}D1{]} The old system keeps track of the current cars' locations.
+	\item {[}D2{]} The old system has APIs to get available shared ride and to get for each ride available seats.
+	\item {[}D3{]} Access to APIs is provided only using the HTTPS protocol.
+	\item {[}R1{]} The System has to show a list of available shared ride.
+	\item {[}R2{]} The System has to show ride details such as: initial location, final location, occupied seats.
+\end{itemize}
+\subsubsection{\gVisitorSignUp}
+\begin{itemize}
+	\item {[}D1{]} Phone number, email address and payments method for the registration are mandatory and must be valid.
+	\item {[}R1{]} The User cannot register more than once.
+	\item {[}R2{]} Unregistered users can only see information pages of the service, the sign up page and login page.
+	\item {[}R3{]} The User must fill in all the mandatory fields, accept terms of use and the privacy policy of the service to successfully complete the registration process.
+	\item {[}R4{]} If the User successfully complete the registration process the electronic card for unlock booked cars will be sent to the address of residence.
+\end{itemize}
+\subsubsection{\gRegisteredLogin}
+\begin{itemize}
+	\item {[}D1{]} Subscribers with the old system are already available in the database.
+	\item {[}R1{]} If the Registered User hasn’t the correct login information cannot access the system.
+	\item {[}R2{]} If the Registered User provides correct credentials the system will grant him/her the access.
+\end{itemize}
+\subsubsection{\gRegisteredReserve}
+\begin{itemize}
+	\item {[}R1{]} A car can be reserved by only one registered user at a time.
+	\item {[}R2{]} A Registered User can choose if enable a shared ride or not.
+	\item {[}R3{]} A Registered User can reserve only one car at time.
+	\item {[}R4{]} A Registered User can reserve a car only if the last payment was done properly.
+\end{itemize}
+\subsubsection{\gRegisteredDeleteReservation}
+\begin{itemize}
+	\item {[}R1{]} The Registered User shall be able to remove a reservation before the reservation time runs out.
+\end{itemize}
+\subsubsection{\gRegisteredSearchDistance}
+\begin{itemize}
+	\item {[}D1{]} The GPS coordinates are always available and correct.
+	\item {[}R1{]} The Registered User can search available cars that are no more than 4km distant from her/him simply providing his/her own position.
+\end{itemize}
+\subsubsection{\gRegisteredSearchAddress}
+\begin{itemize}
+	\item {[}D1{]} The GPS coordinates are always available and correct.
+	\item {[}R1{]} The Registered User can search available cars that are no more than 4km distant from the address provided.
+\end{itemize}
+\subsubsection{\gRegisteredLockUnlock}
+\begin{itemize}
+	\item {[}D1{]} Every car can be locked and unlocked from the onboard computer.
+	\item {[}D2{]} Every car has a bluetooth module connected to the onboard computer.
+	\item {[}D3{]} The old system has APIs to locked and unlocked a selected car.
+	\item {[}D4{]} Access to APIs is provided only using the HTTPS protocol.
+	\item {[}R1{]} A Registered User can open and close a car previously reserved using the mobile app.
+	\item {[}R2{]} A Registered User must to be close to the car not more than 5m.
+	\item {[}R3{]} The Registered User's smartphone must have the application installed and the permissions for use the bluetooth.
+\end{itemize}
+\subsubsection{\gPassengerShare}
+\begin{itemize}
+	\item {[}R1{]} A Passenger can reserves a number of seats of a selected shared ride.
+	\item {[}R2{]} A Passenger can make one reservation at a time.
+	\item {[}R3{]} A Passenger after the booking must arrive at the place of departure before the estimated departure. The estimated departure is calculated from the difference between the car prenotation time and the current time.
+\end{itemize}
+\subsubsection{\gHandymanRecharge}
+\begin{itemize}
+	\item {[}D1{]} Every Handyman Operator has a business smartphone provided by the company with the app.
+	\item {[}D2{]} The old system has APIs to get battery status for each available car.
+	\item {[}D3{]} The old system has APIs to get a list of cars that have to be attach to the charging system.
+	\item {[}D4{]} The old system keeps track of the current cars' locations.
+	\item {[}R1{]} A Handyman Operator can get what are the cars that have to be attach to the charging system.
+	\item {[}R2{]} A Handyman Operator can get where are the cars that have to be attach to the charging system.
+\end{itemize}
+\subsubsection{\gHandymanReportIssue}
+\begin{itemize}
+	\item {[}D1{]} Every Handyman Operator has a business smartphone provided by the company with the app.
+	\item {[}R1{]} A Handyman Operator can send a report if there are any problem with cars.
+\end{itemize}
