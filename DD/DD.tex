@@ -1,0 +1,98 @@
+\documentclass{article}
+\usepackage{graphicx,wrapfig,hyperref,pdfpages,geometry}
+
+%substitute "{\em PowerEnJoy}" with "\pej"
+\newcommand{\pej}{\mbox{\normalfont\itshape PowerEnJoy }}
+%substitute "{\em CSGestion}" with "\csg"
+\newcommand{\csg}{\mbox{\normalfont\itshape CSGestion }}
+\newcommand{\version}{\mbox{\normalfont v. 1.0 }}
+
+%to keep the links of the TOC invisible
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+\geometry{margin=1in}
+
+
+
+\begin{document}
+
+	%---------------------------	FRONT PAGE      	-----------------------------
+	\title{Politecnico di Milano\\A.A. 2016/2017\\Software Engineering 2: ``{\em PowerEnJoy}'' \version \\ \bigskip \textbf{D}esign \textbf{D}ocument}
+	\author{Matteo Bresich (mat. 774366)}
+	
+	
+	%to avoid the hyphenation of the name
+	\hyphenation{PowerEnJoy}
+	
+	\begin{figure}[t]
+		\centering
+		\includegraphics[width=\linewidth]{"img/logo-polimi"}
+		\label{fig:polimi-logo}
+	\end{figure}
+
+	\maketitle
+	
+	%BLANK-PAGE
+	\thispagestyle{empty}
+	\clearpage\mbox{}\thispagestyle{empty}\clearpage
+	
+	\renewcommand*\thesection{\arabic{section}}
+	\renewcommand*\thesubsection{\arabic{section}.\arabic{subsection}}
+	\renewcommand*\thesubsubsection{%
+		\arabic{section}.\arabic{subsection}.\arabic{subsubsection}%
+	}
+	\setcounter{secnumdepth}{4}
+	\setcounter{tocdepth}{4}
+	
+	%---------------------------	TABLE OF CONTENT	-----------------------------
+	%to change the page numbering from roman in the toc to arabic
+	\pagenumbering{roman}
+	\renewcommand{\contentsname}{Table of Content}
+	\tableofcontents
+	
+	\newpage
+	\pagenumbering{arabic}
+	%to insert the writing "Page" above page numbers in the TOC
+	\addtocontents{toc}{~\hfill\textrm{Page}\par}
+	
+	%---------------------------	INTRODUCTION		-----------------------------
+	
+	\section{Introduction}
+		\subsection{Purpose}
+		\subsection{Scope}
+		\subsection{Definitions, Acronyms, Abbreviations}
+		\subsection{Reference Document}
+		\subsection{Document Structure}
+	\section{Architectural Design}
+		\subsection{Overview}
+		\subsection{Component view}
+		\subsection{Deployment view}
+		\subsection{Runtime view}
+		\subsection{Components Interfaces}
+		\subsection{Selected architectural styles and patterns}
+		\subsection{Other design decisions}
+	\section{Algorithm Design}
+	\section{User Interface Design}
+	\section{Requirements Traceability}
+	\section{Effort Spent}
+		\subsection{Hours of work} The time spent to redact this document:
+		\begin{itemize}
+			\item Bresich Matteo: 2 hours.
+		\end{itemize}
+		
+		\begin{center}
+			\begin{tabular}{ | l | l |}
+				\hline
+				Days & Hours of work\\ \hline
+				28/11/16 & 2h\\\hline
+				
+			\end{tabular}
+		\end{center}
+	\section{References}
+\end{document}

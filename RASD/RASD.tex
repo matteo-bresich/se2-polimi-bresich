@@ -12,7 +12,7 @@
 \newcommand{\pej}{\mbox{\normalfont\itshape PowerEnJoy }}
 %substitute "{\em CSGestion}" with "\csg"
 \newcommand{\csg}{\mbox{\normalfont\itshape CSGestion }}
-\newcommand{\version}{\mbox{\normalfont v. 1.0 }}
+\newcommand{\version}{\mbox{\normalfont v. 1.1 }}
 
 %to keep the links of the TOC invisible
 \hypersetup{
@@ -192,7 +192,7 @@
 				\end{tabular}
 			\end{center}
 		\subsubsection{Reliability requirements}
-		The system must have a minimum availability of 98\%.
+		The system must have a minimum availability of 99\%.
 		\subsubsection{Criticality of the application} 
 		The system is not used in critical applications for life.
 		\subsubsection{Interfaces to other applications}
@@ -705,7 +705,7 @@
 			\subsubsection{Performance Requirements}
 			To ensure an high level of usability of the service it is important to calibrate the server resources. The objective is to avoid a deadlock due to the overload in situations of heavy loads.
 			\subsubsection{Availability \& Reliability}
-			The system must guarantee an availability of 98\%. The application will be hosted by multiple redundant servers to prevent service failures due to hardware faults. All servers will be equipped with an autonomous power supply backup system.
+			The system must guarantee an availability of 99\%. The application will be hosted by multiple redundant servers to prevent service failures due to hardware faults. All servers will be equipped with an autonomous power supply backup system.
 			
 			\subsubsection{Security}
 			All the communications between servers and clients must be protected by strong encryption using the SSL protocol. Users' passwords must not be stored in plain text in the database. The application must generate a snapshot of the last 10 days system's state.
@@ -719,7 +719,7 @@
 		\subsection{Alloy}
 		\lstinputlisting[language=alloy,basicstyle=\normalsize]{alloy/alloy.als}
 		\pagebreak
-		\includegraphics[angle=90,keepaspectratio=true,scale=0.26]{"img/alloy"}}
+		\includegraphics[angle=90,keepaspectratio=true,scale=0.26]{"img/alloy"}
 		
 		
 	\pagebreak

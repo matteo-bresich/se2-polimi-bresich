@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.27)  13 NOV 2016 23:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.27)  5 DEC 2016 16:10
 entering extended mode
 **./RASD.tex
 (RASD.tex
@@ -733,24 +733,26 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./img/logo-polimi.png>] [
 2
 
-] (RASD.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 3.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 3.
- [1
+]
 
-])
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
 \tf@toc=\write4
 \openout4 = `RASD.toc'.
 
- [2]
-<"img/eletronic-card".png, id=467, 1003.75pt x 501.875pt>
+[1
+
+] <"img/eletronic-card".png, id=370, 1003.75pt x 501.875pt>
 File: "img/eletronic-card".png Graphic file (type png)
 
 <use "img/eletronic-card".png>
 Package pdftex.def Info: "img/eletronic-card".png used on input line 86.
 (pdftex.def)             Requested size: 164.41711pt x 82.20847pt.
+
+
+LaTeX Warning: Reference `fig:eletronic-card' on page 1 undefined on input line
+ 92.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -765,6 +767,10 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 107.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 128.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 128.
 
 Overfull \hbox (49.62422pt too wide) in paragraph at lines 137--138
 []\T1/cmr/m/n/10 Passenger: is a reg-is-tered user that can re-serve a num-ber 
@@ -777,39 +783,46 @@ been already used, duplicate ignored
                    \relax 
 l.139 			\end{itemize}
                        [2] (includes/goals.tex) [3]
+
+LaTeX Warning: Reference `sec:scope' on page 4 undefined on input line 166.
+
+
+LaTeX Warning: Reference `sec:goals' on page 4 undefined on input line 166.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
-[4] [5] <"img/ui/registration".png, id=496, 698.61pt x 1505.625pt>
+[4] [5] <"img/ui/registration".png, id=398, 698.61pt x 1505.625pt>
 File: "img/ui/registration".png Graphic file (type png)
 
 <use "img/ui/registration".png>
 Package pdftex.def Info: "img/ui/registration".png used on input line 233.
 (pdftex.def)             Requested size: 281.85587pt x 607.45442pt.
  [6 <./img/ui/registration.png>]
-<"img/ui/login".png, id=502, 698.61pt x 1505.625pt>
+<"img/ui/login".png, id=404, 698.61pt x 1505.625pt>
 File: "img/ui/login".png Graphic file (type png)
  <use "img/ui/login".png>
 Package pdftex.def Info: "img/ui/login".png used on input line 239.
 (pdftex.def)             Requested size: 281.85587pt x 607.45442pt.
 
 [7 <./img/ui/login.png>]
-<"img/ui/private-area".png, id=508, 698.61pt x 1505.625pt>
+<"img/ui/private-area".png, id=410, 698.61pt x 1505.625pt>
 File: "img/ui/private-area".png Graphic file (type png)
 
 <use "img/ui/private-area".png>
 Package pdftex.def Info: "img/ui/private-area".png used on input line 245.
 (pdftex.def)             Requested size: 281.85587pt x 607.45442pt.
  [8 <./img/ui/private-area.png>]
-<"img/ui/private-area-employee".png, id=514, 698.61pt x 1505.625pt>
+<"img/ui/private-area-employee".png, id=416, 698.61pt x 1505.625pt>
 File: "img/ui/private-area-employee".png Graphic file (type png)
 
 <use "img/ui/private-area-employee".png>
 Package pdftex.def Info: "img/ui/private-area-employee".png used on input line 
 251.
 (pdftex.def)             Requested size: 281.85587pt x 607.45442pt.
- [9 <./img/ui/private-area-employee.png>] <"img/ui/search-car".png, id=521, 698
+ [9 <./img/ui/private-area-employee.png>] <"img/ui/search-car".png, id=422, 698
 .61pt x 1505.625pt>
 File: "img/ui/search-car".png Graphic file (type png)
 
@@ -817,7 +830,7 @@ File: "img/ui/search-car".png Graphic file (type png)
 Package pdftex.def Info: "img/ui/search-car".png used on input line 257.
 (pdftex.def)             Requested size: 281.85587pt x 607.45442pt.
  [10 <./img/ui/search-car.png (PNG copy)>]
-<"img/ui/delete-reservation".png, id=526, 698.61pt x 1505.625pt>
+<"img/ui/delete-reservation".png, id=428, 698.61pt x 1505.625pt>
 File: "img/ui/delete-reservation".png Graphic file (type png)
 
 <use "img/ui/delete-reservation".png>
@@ -825,7 +838,7 @@ Package pdftex.def Info: "img/ui/delete-reservation".png used on input line 263
 .
 (pdftex.def)             Requested size: 281.85587pt x 607.45442pt.
  [11 <./img/ui/delete-reservation.png (PNG copy)>] <"img/ui/get-cars-recharge".
-png, id=531, 698.61pt x 1505.625pt>
+png, id=433, 698.61pt x 1505.625pt>
 File: "img/ui/get-cars-recharge".png Graphic file (type png)
 
 <use "img/ui/get-cars-recharge".png>
@@ -833,7 +846,7 @@ Package pdftex.def Info: "img/ui/get-cars-recharge".png used on input line 269.
 
 (pdftex.def)             Requested size: 281.85587pt x 607.45442pt.
  [12 <./img/ui/get-cars-recharge.png (PNG copy)>] <"img/ui/edit-profile".png, i
-d=536, 698.61pt x 1505.625pt>
+d=438, 698.61pt x 1505.625pt>
 File: "img/ui/edit-profile".png Graphic file (type png)
 
 <use "img/ui/edit-profile".png>
@@ -841,7 +854,7 @@ Package pdftex.def Info: "img/ui/edit-profile".png used on input line 275.
 (pdftex.def)             Requested size: 281.85587pt x 607.45442pt.
  [13 <./img/ui/edit-profile.png (PNG copy)>]
 (includes/functional-requirements.tex [14] [15]) [16] (includes/scenarios.tex)
-[17] [18] <"img/use-case-whole-system".png, id=562, 906.38625pt x 980.16188pt>
+[17] [18] <"img/use-case-whole-system".png, id=464, 906.38625pt x 980.16188pt>
 File: "img/use-case-whole-system".png Graphic file (type png)
 
 <use "img/use-case-whole-system".png>
@@ -849,7 +862,7 @@ Package pdftex.def Info: "img/use-case-whole-system".png used on input line 294
 .
 (pdftex.def)             Requested size: 422.77664pt x 457.19139pt.
  [19 <./img/use-case-whole-system.png>]
-[20] <"img/use-case-registration".png, id=579, 749.80125pt x 260.47313pt>
+[20] <"img/use-case-registration".png, id=481, 749.80125pt x 260.47313pt>
 File: "img/use-case-registration".png Graphic file (type png)
 
 <use "img/use-case-registration".png>
@@ -857,7 +870,7 @@ Package pdftex.def Info: "img/use-case-registration".png used on input line 324
 .
 (pdftex.def)             Requested size: 457.3781pt x 158.88837pt.
 
-<"img/sequence-diagram-registration".png, id=580, 765.6103pt x 864.22874pt>
+<"img/sequence-diagram-registration".png, id=482, 765.6103pt x 864.22874pt>
 File: "img/sequence-diagram-registration".png Graphic file (type png)
 
 <use "img/sequence-diagram-registration".png>
@@ -869,14 +882,14 @@ Overfull \vbox (2.96796pt too high) has occurred while \output is active []
 
 
 [21 <./img/use-case-registration.png> <./img/sequence-diagram-registration.png>
-] [22] <"img/use-case-login".png, id=596, 662.475pt x 286.06876pt>
+] [22] <"img/use-case-login".png, id=498, 662.475pt x 286.06876pt>
 File: "img/use-case-login".png Graphic file (type png)
 
 <use "img/use-case-login".png>
 Package pdftex.def Info: "img/use-case-login".png used on input line 359.
 (pdftex.def)             Requested size: 463.72934pt x 200.24675pt.
 
-<"img/sequence-diagram-login".png, id=597, 691.08188pt x 531.48563pt>
+<"img/sequence-diagram-login".png, id=499, 691.08188pt x 531.48563pt>
 File: "img/sequence-diagram-login".png Graphic file (type png)
 
 <use "img/sequence-diagram-login".png>
@@ -884,7 +897,7 @@ Package pdftex.def Info: "img/sequence-diagram-login".png used on input line 36
 8.
 (pdftex.def)             Requested size: 463.02245pt x 356.09352pt.
  [23 <./img/use-case-login.png> <./img/sequence-diagram-login.png>] [24]
-<"img/use-case-add-reservation".png, id=614, 639.13782pt x 275.52937pt>
+<"img/use-case-add-reservation".png, id=516, 639.13782pt x 275.52937pt>
 File: "img/use-case-add-reservation".png Graphic file (type png)
 
 <use "img/use-case-add-reservation".png>
@@ -892,7 +905,7 @@ Package pdftex.def Info: "img/use-case-add-reservation".png used on input line
 397.
 (pdftex.def)             Requested size: 447.39342pt x 192.86923pt.
 
-<"img/sequence-diagram-add-reservation".png, id=615, 662.475pt x 518.6878pt>
+<"img/sequence-diagram-add-reservation".png, id=517, 662.475pt x 518.6878pt>
 File: "img/sequence-diagram-add-reservation".png Graphic file (type png)
 
 <use "img/sequence-diagram-add-reservation".png>
@@ -901,7 +914,7 @@ ut line 406.
 (pdftex.def)             Requested size: 447.17155pt x 350.11499pt.
  [25 <./img/use-case-add-reservation.png> <./img/sequence-diagram-add-reservati
 on.png>] [26]
-<"img/use-case-del-reservation".png, id=631, 648.17157pt x 260.47313pt>
+<"img/use-case-del-reservation".png, id=533, 648.17157pt x 260.47313pt>
 File: "img/use-case-del-reservation".png Graphic file (type png)
 
 <use "img/use-case-del-reservation".png>
@@ -909,7 +922,7 @@ Package pdftex.def Info: "img/use-case-del-reservation".png used on input line
 434.
 (pdftex.def)             Requested size: 453.717pt x 182.32994pt.
 
-<"img/sequence-diagram-del-reservation".png, id=632, 665.48625pt x 557.08125pt>
+<"img/sequence-diagram-del-reservation".png, id=534, 665.48625pt x 557.08125pt>
 File: "img/sequence-diagram-del-reservation".png Graphic file (type png)
 <use "img/sequence-diagram-del-reservation".png>
 Package pdftex.def Info: "img/sequence-diagram-del-reservation".png used on inp
@@ -917,7 +930,7 @@ ut line 443.
 (pdftex.def)             Requested size: 452.52466pt x 378.81024pt.
  [27 <./img/use-case-del-reservation.png> <./img/sequence-diagram-del-reservati
 on.png>] [28]
-<"img/use-case-search-cars".png, id=648, 627.84563pt x 269.50688pt>
+<"img/use-case-search-cars".png, id=550, 627.84563pt x 269.50688pt>
 File: "img/use-case-search-cars".png Graphic file (type png)
 
 <use "img/use-case-search-cars".png>
@@ -925,7 +938,7 @@ Package pdftex.def Info: "img/use-case-search-cars".png used on input line 484.
 
 (pdftex.def)             Requested size: 470.88306pt x 202.12965pt.
 
-<"img/sequence-diagram-search-cars".png, id=649, 692.5875pt x 542.77782pt>
+<"img/sequence-diagram-search-cars".png, id=551, 692.5875pt x 542.77782pt>
 File: "img/sequence-diagram-search-cars".png Graphic file (type png)
 
 <use "img/sequence-diagram-search-cars".png>
@@ -934,14 +947,14 @@ ine 493.
 (pdftex.def)             Requested size: 470.95326pt x 369.08403pt.
  [29 <./img/use-case-search-cars.png> <./img/sequence-diagram-search-cars.png>]
  [30]
-<"img/use-case-manage-car".png, id=664, 633.86812pt x 271.76532pt>
+<"img/use-case-manage-car".png, id=566, 633.86812pt x 271.76532pt>
 File: "img/use-case-manage-car".png Graphic file (type png)
 
 <use "img/use-case-manage-car".png>
 Package pdftex.def Info: "img/use-case-manage-car".png used on input line 520.
 (pdftex.def)             Requested size: 462.71988pt x 198.38702pt.
 
-<"img/sequence-diagram-manage-car".png, id=665, 666.23906pt x 694.09312pt>
+<"img/sequence-diagram-manage-car".png, id=567, 666.23906pt x 694.09312pt>
 File: "img/sequence-diagram-manage-car".png Graphic file (type png)
 
 <use "img/sequence-diagram-manage-car".png>
@@ -954,7 +967,7 @@ Overfull \vbox (11.50085pt too high) has occurred while \output is active []
 
 [31 <./img/use-case-manage-car.png> <./img/sequence-diagram-manage-car.png>]
 [32]
-<"img/use-case-manage-passenger-reservation".png, id=686, 769.37437pt x 265.742
+<"img/use-case-manage-passenger-reservation".png, id=588, 769.37437pt x 265.742
 81pt>
 File: "img/use-case-manage-passenger-reservation".png Graphic file (type png)
  <use "img/use-case-manage-passenger-reservation".png>
@@ -962,7 +975,7 @@ Package pdftex.def Info: "img/use-case-manage-passenger-reservation".png used o
 n input line 577.
 (pdftex.def)             Requested size: 500.08742pt x 172.73077pt.
 
-<"img/sequence-diagram-passenger-add-reservation".png, id=687, 673.01437pt x 51
+<"img/sequence-diagram-passenger-add-reservation".png, id=589, 673.01437pt x 51
 8.6878pt>
 File: "img/sequence-diagram-passenger-add-reservation".png Graphic file (type p
 ng)
@@ -972,7 +985,7 @@ sed on input line 586.
 (pdftex.def)             Requested size: 498.03311pt x 383.83089pt.
  [33 <./img/use-case-manage-passenger-reservation.png> <./img/sequence-diagram-
 passenger-add-reservation.png>]
-<"img/sequence-diagram-passenger-del-reservation".png, id=695, 665.48625pt x 55
+<"img/sequence-diagram-passenger-del-reservation".png, id=596, 665.48625pt x 55
 7.08125pt>
 File: "img/sequence-diagram-passenger-del-reservation".png Graphic file (type p
 ng)
@@ -981,14 +994,14 @@ Package pdftex.def Info: "img/sequence-diagram-passenger-del-reservation".png u
 sed on input line 595.
 (pdftex.def)             Requested size: 492.46227pt x 412.24217pt.
  [34 <./img/sequence-diagram-passenger-del-reservation.png>] [35]
-<"img/use-case-recharge".png, id=709, 699.36281pt x 323.70938pt>
+<"img/use-case-recharge".png, id=611, 699.36281pt x 323.70938pt>
 File: "img/use-case-recharge".png Graphic file (type png)
 
 <use "img/use-case-recharge".png>
 Package pdftex.def Info: "img/use-case-recharge".png used on input line 623.
 (pdftex.def)             Requested size: 461.58087pt x 213.64885pt.
 
-<"img/sequence-diagram-recharge".png, id=710, 733.23938pt x 644.4075pt>
+<"img/sequence-diagram-recharge".png, id=612, 733.23938pt x 644.4075pt>
 File: "img/sequence-diagram-recharge".png Graphic file (type png)
 
 <use "img/sequence-diagram-recharge".png>
@@ -996,14 +1009,14 @@ Package pdftex.def Info: "img/sequence-diagram-recharge".png used on input line
  632.
 (pdftex.def)             Requested size: 461.94325pt x 405.97888pt.
  [36 <./img/use-case-recharge.png> <./img/sequence-diagram-recharge.png>] [37]
-<"img/use-case-report".png, id=725, 654.19406pt x 261.97874pt>
+<"img/use-case-report".png, id=627, 654.19406pt x 261.97874pt>
 File: "img/use-case-report".png Graphic file (type png)
 
 <use "img/use-case-report".png>
 Package pdftex.def Info: "img/use-case-report".png used on input line 660.
 (pdftex.def)             Requested size: 457.93272pt x 183.38387pt.
 
-<"img/sequence-diagram-report".png, id=726, 733.23938pt x 644.4075pt>
+<"img/sequence-diagram-report".png, id=628, 733.23938pt x 644.4075pt>
 File: "img/sequence-diagram-report".png Graphic file (type png)
 
 <use "img/sequence-diagram-report".png>
@@ -1011,14 +1024,14 @@ Package pdftex.def Info: "img/sequence-diagram-report".png used on input line 6
 69.
 (pdftex.def)             Requested size: 454.60371pt x 399.52852pt.
  [38 <./img/use-case-report.png> <./img/sequence-diagram-report.png>]
-<"img/class-diagram".png, id=733, 793.46437pt x 952.30782pt>
+<"img/class-diagram".png, id=635, 793.46437pt x 952.30782pt>
 File: "img/class-diagram".png Graphic file (type png)
 
 <use "img/class-diagram".png>
 Package pdftex.def Info: "img/class-diagram".png used on input line 678.
 (pdftex.def)             Requested size: 317.38013pt x 380.91638pt.
  [39 <./img/class-diagram.png>]
-<img/state-machine-car-reservation.png, id=740, 668.4975pt x 319.1925pt>
+<img/state-machine-car-reservation.png, id=641, 668.4975pt x 319.1925pt>
 File: img/state-machine-car-reservation.png Graphic file (type png)
 
 <use img/state-machine-car-reservation.png>
@@ -1026,7 +1039,7 @@ Package pdftex.def Info: img/state-machine-car-reservation.png used on input li
 ne 688.
 (pdftex.def)             Requested size: 434.51822pt x 207.47266pt.
 
-<img/state-machine-car-availability.png, id=741, 766.36313pt x 498.36188pt>
+<img/state-machine-car-availability.png, id=642, 766.36313pt x 498.36188pt>
 File: img/state-machine-car-availability.png Graphic file (type png)
 
 <use img/state-machine-car-availability.png>
@@ -1062,18 +1075,11 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-) [44] <"img/alloy".png, id=886, 2928.9425pt x 505.89pt>
+) [44] <"img/alloy".png, id=788, 2928.9425pt x 505.89pt>
 File: "img/alloy".png Graphic file (type png)
  <use "img/alloy".png>
 Package pdftex.def Info: "img/alloy".png used on input line 722.
 (pdftex.def)             Requested size: 2928.9354pt x 505.88875pt.
-
-! Too many }'s.
-l.722 ...spectratio=true,scale=0.26]{"img/alloy"}}
-                                                  
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
 
 Overfull \vbox (111.0771pt too high) has occurred while \output is active []
 
@@ -1086,22 +1092,29 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 767.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 767.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 767.
 Package rerunfilecheck Info: File `RASD.out' has not changed.
-(rerunfilecheck)             Checksum: 4AF718E8D88AD7A79A5A243443F2D70E;7726.
+(rerunfilecheck)             Checksum: 4902D05121F28E66B25A17C72E6C6040;7736.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 767.
  ) 
 Here is how much of TeX's memory you used:
- 9630 strings out of 493334
- 137879 string characters out of 3139248
- 375903 words of memory out of 3000000
+ 9627 strings out of 493334
+ 137866 string characters out of 3139248
+ 375415 words of memory out of 3000000
  12702 multiletter control sequences out of 15000+200000
  14684 words of font info for 34 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
  37i,9n,43p,794b,1967s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Matteo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
 \ecrm0700.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
-n\ec\dpi600\ecbx1200.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
-our\jknappen\ec\dpi600\ecti1000.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\2.9\f
-onts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\Matteo\AppData\Local\M
+n\ec\dpi600\ecti1000.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
+our\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\2.9\f
+onts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Matteo\AppData\Local\M
 iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\Matteo\AppD
 ata\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\
 Matteo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk>
@@ -1112,9 +1125,9 @@ r\jknappen\ec\dpi600\ecrm1728.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
 y10.pfb>
-Output written on RASD.pdf (50 pages, 2765606 bytes).
+Output written on RASD.pdf (49 pages, 2683841 bytes).
 PDF statistics:
- 1335 PDF objects out of 1440 (max. 8388607)
- 306 named destinations out of 1000 (max. 500000)
+ 1237 PDF objects out of 1440 (max. 8388607)
+ 305 named destinations out of 1000 (max. 500000)
  859 words of extra memory for PDF output out of 10000 (max. 10000000)
 
