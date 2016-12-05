@@ -56,31 +56,31 @@
 \BOOKMARK [3][-]{subsubsection.3.3.1}{Scenario 1}{subsection.3.3}% 56
 \BOOKMARK [3][-]{subsubsection.3.3.2}{Scenario 2}{subsection.3.3}% 57
 \BOOKMARK [3][-]{subsubsection.3.3.3}{Scenario 3}{subsection.3.3}% 58
-\BOOKMARK [2][-]{subsection.3.4}{Scenario 4}{section.3}% 59
-\BOOKMARK [3][-]{subsubsection.3.4.1}{Scenario 5}{subsection.3.4}% 60
-\BOOKMARK [3][-]{subsubsection.3.4.2}{Scenario 6}{subsection.3.4}% 61
-\BOOKMARK [2][-]{subsection.3.5}{UML Models}{section.3}% 62
-\BOOKMARK [3][-]{subsubsection.3.5.1}{Use Case}{subsection.3.5}% 63
-\BOOKMARK [4][-]{paragraph.3.5.1.1}{Visitor registers to PowerEnJoy }{subsubsection.3.5.1}% 64
-\BOOKMARK [4][-]{paragraph.3.5.1.2}{Visitor login to PowerEnJoy }{subsubsection.3.5.1}% 65
-\BOOKMARK [4][-]{paragraph.3.5.1.3}{Registered User reserve a car using PowerEnJoy }{subsubsection.3.5.1}% 66
-\BOOKMARK [4][-]{paragraph.3.5.1.4}{Registered User delete a reservation using PowerEnJoy }{subsubsection.3.5.1}% 67
-\BOOKMARK [4][-]{paragraph.3.5.1.5}{Registered User search available cars using PowerEnJoy }{subsubsection.3.5.1}% 68
-\BOOKMARK [4][-]{paragraph.3.5.1.6}{Registered User manage a reserved car using PowerEnJoy }{subsubsection.3.5.1}% 69
-\BOOKMARK [4][-]{paragraph.3.5.1.7}{Passenger reserves a number of seats of a shared ride using PowerEnJoy }{subsubsection.3.5.1}% 70
-\BOOKMARK [4][-]{paragraph.3.5.1.8}{Passenger delete a reservation of a shared ride using PowerEnJoy }{subsubsection.3.5.1}% 71
-\BOOKMARK [4][-]{paragraph.3.5.1.9}{Handyman operator gets which and where are cars that have to be attach to the charging system using PowerEnJoy }{subsubsection.3.5.1}% 72
-\BOOKMARK [4][-]{paragraph.3.5.1.10}{Handyman operator sends a report using PowerEnJoy }{subsubsection.3.5.1}% 73
-\BOOKMARK [3][-]{subsubsection.3.5.2}{Class Diagram}{subsection.3.5}% 74
-\BOOKMARK [3][-]{subsubsection.3.5.3}{State Machine Diagrams}{subsection.3.5}% 75
-\BOOKMARK [4][-]{paragraph.3.5.3.1}{Evolution of a Car Reservation}{subsubsection.3.5.3}% 76
-\BOOKMARK [4][-]{paragraph.3.5.3.2}{Car Avaliability}{subsubsection.3.5.3}% 77
-\BOOKMARK [2][-]{subsection.3.6}{Non Functional Requirements}{section.3}% 78
-\BOOKMARK [3][-]{subsubsection.3.6.1}{Performance Requirements}{subsection.3.6}% 79
-\BOOKMARK [3][-]{subsubsection.3.6.2}{Availability \046 Reliability}{subsection.3.6}% 80
-\BOOKMARK [3][-]{subsubsection.3.6.3}{Security}{subsection.3.6}% 81
-\BOOKMARK [3][-]{subsubsection.3.6.4}{Maintainability}{subsection.3.6}% 82
-\BOOKMARK [2][-]{subsection.3.7}{Alloy}{section.3}% 83
+\BOOKMARK [3][-]{subsubsection.3.3.4}{Scenario 4}{subsection.3.3}% 59
+\BOOKMARK [3][-]{subsubsection.3.3.5}{Scenario 5}{subsection.3.3}% 60
+\BOOKMARK [3][-]{subsubsection.3.3.6}{Scenario 6}{subsection.3.3}% 61
+\BOOKMARK [2][-]{subsection.3.4}{UML Models}{section.3}% 62
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Use Case}{subsection.3.4}% 63
+\BOOKMARK [4][-]{paragraph.3.4.1.1}{Visitor registers to PowerEnJoy }{subsubsection.3.4.1}% 64
+\BOOKMARK [4][-]{paragraph.3.4.1.2}{Visitor login to PowerEnJoy }{subsubsection.3.4.1}% 65
+\BOOKMARK [4][-]{paragraph.3.4.1.3}{Registered User reserve a car using PowerEnJoy }{subsubsection.3.4.1}% 66
+\BOOKMARK [4][-]{paragraph.3.4.1.4}{Registered User delete a reservation using PowerEnJoy }{subsubsection.3.4.1}% 67
+\BOOKMARK [4][-]{paragraph.3.4.1.5}{Registered User search available cars using PowerEnJoy }{subsubsection.3.4.1}% 68
+\BOOKMARK [4][-]{paragraph.3.4.1.6}{Registered User manage a reserved car using PowerEnJoy }{subsubsection.3.4.1}% 69
+\BOOKMARK [4][-]{paragraph.3.4.1.7}{Passenger reserves a number of seats of a shared ride using PowerEnJoy }{subsubsection.3.4.1}% 70
+\BOOKMARK [4][-]{paragraph.3.4.1.8}{Passenger delete a reservation of a shared ride using PowerEnJoy }{subsubsection.3.4.1}% 71
+\BOOKMARK [4][-]{paragraph.3.4.1.9}{Handyman operator gets which and where are cars that have to be attach to the charging system using PowerEnJoy }{subsubsection.3.4.1}% 72
+\BOOKMARK [4][-]{paragraph.3.4.1.10}{Handyman operator sends a report using PowerEnJoy }{subsubsection.3.4.1}% 73
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Class Diagram}{subsection.3.4}% 74
+\BOOKMARK [3][-]{subsubsection.3.4.3}{State Machine Diagrams}{subsection.3.4}% 75
+\BOOKMARK [4][-]{paragraph.3.4.3.1}{Evolution of a Car Reservation}{subsubsection.3.4.3}% 76
+\BOOKMARK [4][-]{paragraph.3.4.3.2}{Car Avaliability}{subsubsection.3.4.3}% 77
+\BOOKMARK [2][-]{subsection.3.5}{Non Functional Requirements}{section.3}% 78
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Performance Requirements}{subsection.3.5}% 79
+\BOOKMARK [3][-]{subsubsection.3.5.2}{Availability \046 Reliability}{subsection.3.5}% 80
+\BOOKMARK [3][-]{subsubsection.3.5.3}{Security}{subsection.3.5}% 81
+\BOOKMARK [3][-]{subsubsection.3.5.4}{Maintainability}{subsection.3.5}% 82
+\BOOKMARK [2][-]{subsection.3.6}{Alloy}{section.3}% 83
 \BOOKMARK [1][-]{section.4}{Appendix}{}% 84
 \BOOKMARK [2][-]{subsection.4.1}{Software and tools used}{section.4}% 85
 \BOOKMARK [2][-]{subsection.4.2}{Hours of work}{section.4}% 86
