@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage{graphicx,wrapfig,hyperref,pdfpages,geometry}
+\usepackage{graphicx,wrapfig,hyperref,pdfpages,geometry,amsmath,longtable,eurosym,listings}
 
 %substitute "{\em PowerEnJoy}" with "\pej"
 \newcommand{\pej}{\mbox{\normalfont\itshape PowerEnJoy }}
@@ -62,37 +62,512 @@
 	\addtocontents{toc}{~\hfill\textrm{Page}\par}
 	
 	%---------------------------	INTRODUCTION		-----------------------------
-	
 	\section{Introduction}
 		\subsection{Purpose}
+		This is the Design Document for the \pej application. The target audience of this document are project managers, developers, testers and Quality Assurance. Its aim is to provide a functional description of the main architectural components. The document can be used for help maintenance and further development.
 		\subsection{Scope}
+		This document focuses on the non functional requirements of \pej. It provides guidance and template material which is intended to assist the development phase of the project.
 		\subsection{Definitions, Acronyms, Abbreviations}
+		\subsubsection{Definitions}
+		\begin{itemize}
+			\item Thin client: low power calculation client.
+			\item Fat server: high computing power server able to handle many parallel requests.
+			\item User session: the entire period of time in which the user is logged in.
+		\end{itemize}
+		\subsubsection{Acronyms}
+		\begin{itemize}
+			\item JEE: Java Enterprise Edition
+			\item RASD: Requirements Analysis and Specification Document.
+			\item CSGestion: Car Sharing Gestion.
+			\item ERP: Enterprise Resource Planning.
+			\item UI: User Interface.
+			\item API: Application Program Interface.
+			\item MOM: Message Oriented Middleware.
+			\item EIS: Enterprise Information Systems.
+		\end{itemize}
 		\subsection{Reference Document}
+		\begin{itemize}
+			\item Specification document
+			\item RASD for \pej
+			\item IEEE Standard on Design Description
+		\end{itemize}
+		\pagebreak
 		\subsection{Document Structure}
+		This document presents the system architecture using different levels of detail. Every design decision is justified by a description of the reasons. The design is develop in a top-down approach to ensure a good structure for the system.
+		\subsubsection{Main Topics}
+		\begin{enumerate}
+			\item Introduction: \\ synopsis of the document.
+			\item Architectural design: \\ are presented all the components of the system and the interaction between them.
+			\item Algorithm design: \\ flowchart and descriptions of the fundamental algorithms of \pej.
+			\item User interface design: \\ mock-ups of the UI.
+			\item Requirements traceability: \\ mapping between the requirements and the components.
+			\item References
+		\end{enumerate}
+	\pagebreak
+	
 	\section{Architectural Design}
 		\subsection{Overview}
-		\subsection{Component view}
-		\subsection{Deployment view}
+		This section of the design document provides a general description of the design of the system
+		and its processes. The \pej system will follows the "event-driven" and "client-server" architectural style, there will be a thin client and a fat server and the interaction between the components takes place through asynchronous events. The \pej system will be implemented using JEE following a multi-tier architecture as shown in the picture below. In according to the philosophy of divide and conquer, the choice of a multi-tier architecture is motivated by the flexibility and the reusability of the application. In fact developers, by segregating an application into tiers, acquire the option of modifying or adding a specific layer, instead of reworking the entire application. Furthermore the simplicity of the design and implementation of this architecture allows an easy integration with the old custom ERP.
+		\begin{center}
+			\includegraphics[width=0.3\linewidth]{"img/architecture"}
+		\end{center}
+		\begin{enumerate}
+			\item \textit{Client Tier}: contains Application Clients and Web Browsers and it is the layer designed to interact with the users. In our case it includes the browser and the mobile application.
+			\item \textit{Java EE Server Tier}: contains the Servlets and Dynamic Web Pages that need to be elaborated and the Java Beans, which contain the business logic of the application.
+			\item \textit{MOM Tier}: contains a Message Oriented Middleware based on Java Message Service that allows an easier integration of the legacy ERP and also permit to have loosely coupled components that can be replaced with alternative implementations that provide the same services.
+			\item \textit{EIS Tier}: contains the data source. In our case, there is a database and the legacy ERP that both are allowed to manipulate and to retrieve relevant data.
+		\end{enumerate}
+		\pagebreak
+		
+		\subsection{General Component view and interactions}
+			\subsubsection{General Package Design}
+			Considering the chosen architecture, it can be identified the following packages:
+			\begin{center}
+				\includegraphics[width=0.9\linewidth]{"img/package-design"}
+			\end{center}
+			\begin{itemize}
+				\item User Interface
+				\item Business Logic
+				\item Message Oriented Middleware
+				\item Persistence Manager
+				\item CSGestion
+			\end{itemize}
+			All users, as shown in the picture above, can not directly access all packages except for the ui.
+			\subsubsection{Detailed Package Design}
+			The inner packages are described as follows:
+			\begin{itemize}
+				\item User Interface: set of sub-packages responsible of user's interactions and of forwarding information requests to the Business Logic sub-packages.
+				\item Business Logic: set of sub-packages responsible for handling requests from the User Interface package, process requests and send back a result. These packages may access the Message Oriented Middleware package.
+				\item Message Oriented Middleware: set of sub-packages prepared to be an intermediary between Persistence Manager, Legacy ERP and the Business Logic package.
+				\item Persistence Manager: set of sub-packages contains the data model for the system. It accepts requests from the Message Oriented Middleware package.
+				\item CSGestion:  set of sub-packages that represent the legacy ERP of the company (
+				for more information see CSGestion documentation).
+			\end{itemize}
+			\begin{center}
+				\includegraphics[width=0.8\linewidth]{"img/detailed-package-design"}
+			\end{center}
+			\pagebreak
+			\subsubsection{General Component View}
+			The picture below represents the main components and interfaces of \pej.
+			\begin{center}
+				\includegraphics[width=0.9\linewidth]{"img/component-view"}
+			\end{center}
+			\pagebreak
+		
+		\subsection{Component view and interfaces}
+		Follows a more detailed description for each component with its interfaces.
+			\subsubsection{User Manager}
+			\begin{minipage}{\linewidth}
+				\makebox[\linewidth]{
+					\includegraphics[keepaspectratio=true,scale=0.5]{"img/components-detail/user-manager"}}
+			\end{minipage}
+			\begin{center}
+				\centerline{\textbf{Register Manager}}	
+				\begin{tabular}{| l | p{9cm} |}\hline
+					Definition & Component that controls visitors' registrations.\\\hline
+					Responsibilities & This component allows visitors to sign up into \pej{} and become registered users. It connects to the MOM to store and retrieve user's credentials and Send Email interface to verify the sign up procedure through a confirmation email.\\\hline
+					Interaction & With the visitors, the MOM and Notification.\\\hline
+					Interfaces offered & \begin{itemize}
+						\item Register for Visitor
+					\end{itemize}\\\hline
+					Interfaces required & \begin{itemize}
+						\item MOM
+						\item Send Email
+					\end{itemize}\\\hline
+					Implementation & Static class\\\hline
+				\end{tabular}
+			\end{center}
+			
+			\pagebreak
+			\begin{center}
+				\centerline{\textbf{Login}}	
+				\begin{tabular}{| l | p{9cm} |}\hline
+					Definition & Component that controls users' login.\\\hline
+					Responsibilities & This component allows users to login into \pej{}. It is connected to the MOM to verify the credentials and grants access to the Profile Manager and it sends email and to recover the user's password.\\\hline
+					Interaction & With all users and the MOM.\\\hline
+					Interfaces offered & \begin{itemize}
+						\item Login for User
+						\item Login Validation for Profile Manager
+					\end{itemize}\\\hline
+					Interfaces required & \begin{itemize}
+						\item MOM
+						\item Send Email
+						\item Create User
+					\end{itemize}\\\hline
+					Implementation & Static class\\\hline
+				\end{tabular}
+			\end{center}
+			\begin{center}
+				\centerline{\textbf{Profile Manager}}	
+				\begin{tabular}{| l | p{9cm} |}\hline
+					Definition & Component that controls users' profile.\\\hline
+					Responsibilities & This component allows users to edit their profile. For instance to change the password, payment method, phone number and so on.\\\hline
+					Interaction & With all the Registered User of the system, with the MOM and with the Login component.\\\hline
+					Interfaces offered & \begin{itemize}
+						\item Manage Account for Registered User
+					\end{itemize}\\\hline
+					Interfaces required & \begin{itemize}
+						\item MOM
+						\item Login Validation for Login
+					\end{itemize}\\\hline
+					Implementation & Multi instance: one for each user session.\\\hline
+				\end{tabular}
+			\end{center}
+		
+			\pagebreak	
+			\begin{center}
+				\centerline{\textbf{User Factory}}	
+				\begin{tabular}{| l | p{9cm} |}\hline
+					Definition & Component that instantiates registered users.\\\hline
+					Responsibilities & This component is used for the creation of an instance for every logged in user.\\\hline
+					Interaction & With Login component and with the MOM.\\\hline
+					Interfaces offered & \begin{itemize}
+						\item Create User for Login
+					\end{itemize}\\\hline
+					Interfaces required & \begin{itemize}
+						\item MOM
+					\end{itemize}\\\hline
+					Implementation & Factory design pattern.\\\hline
+				\end{tabular}
+			\end{center}
+		
+		
+			\pagebreak
+			\subsubsection{Payment Manager}
+			\begin{minipage}{\linewidth}
+				\makebox[\linewidth]{
+					\includegraphics[keepaspectratio=true,scale=0.6]{"img/components-detail/payment-manager"}}
+			\end{minipage}
+			\begin{center}
+				\centerline{\textbf{Payment Manager}}	
+				\begin{tabular}{| l | p{9cm} |}\hline
+					Definition & Component that controls the payment process.\\\hline
+					Responsibilities & This component is able to computing the amount of money that the user have to pay. It uses an interface to the MOM to interact with the payment service of the legacy ERP.\\\hline
+					Interaction & With the Reservation Manager to receive information about the reservation. With Notification to send the payment summary. With MOM to interact with the ERP's payment service.\\\hline
+					Interfaces offered & \begin{itemize}
+						\item Payment Reservation/Fees for Reservation Manager
+					\end{itemize}\\\hline
+					Interfaces required & \begin{itemize}
+						\item MOM
+						\item Send Payment Summary
+					\end{itemize}\\\hline
+					Implementation & Static class\\\hline
+				\end{tabular}
+			\end{center}
+			
+			
+			\pagebreak
+			\subsubsection{Reservation Manager}
+			\begin{minipage}{\linewidth}
+				\makebox[\linewidth]{
+					\includegraphics[keepaspectratio=true,scale=0.6]{"img/components-detail/reservation-manager"}}
+			\end{minipage}
+			\begin{center}
+				\centerline{\textbf{Reservation Handler}}	
+				\begin{tabular}{| l | p{9cm} |}\hline
+					Definition & Component that receives the users' requests.\\\hline
+					Responsibilities & This component is able to add or remove a car or a seat reservation made by Drivers or Passengers. It sends notification to Drivers and Passengers in case of a cancellation of a booking. This component also has the function of expire a reservation.\\\hline
+					Interaction & With the Reservation Factory to create a reservation. With the Reservation to edit reservation data. \\\hline
+					Interfaces offered & \begin{itemize}
+						\item Manage Reservation for Driver and Passenger
+					\end{itemize}\\\hline
+					Interfaces required & \begin{itemize}
+						\item MOM
+						\item Create Reservation for Reservation Factory
+						\item Edit Reservation for Reservation
+						\item Send Notification for Notification
+					\end{itemize}\\\hline
+					Implementation & Multi instance: one for each Driver or Passenger.\\\hline
+				\end{tabular}
+			\end{center}
+			\pagebreak
+			\begin{center}
+				\centerline{\textbf{Reservation Factory}}	
+				\begin{tabular}{| l | p{9cm} |}\hline
+					Definition & Component that controls the creation of a reservation.\\\hline
+					Responsibilities & This component is able to create a car reservation. It uses an interface to the Car Manager to select a car and book it.\\\hline
+					Interaction & With the Reservation Handler and with the Car Manager.\\\hline
+					Interfaces offered & \begin{itemize}
+						\item Create Reservation for Reservation Handler
+					\end{itemize}\\\hline
+					Interfaces required & \begin{itemize}
+						\item Allocate Car for Car Manager
+					\end{itemize}\\\hline
+					Implementation & Factory design pattern.\\\hline
+				\end{tabular}
+			\end{center}
+			\begin{center}
+				\centerline{\textbf{Reservation}}	
+				\begin{tabular}{| l | p{9cm} |}\hline
+					Definition & Component that controls the reservation.\\\hline
+					Responsibilities & This component is able to edit reservation informations. It uses an interface to the MOM to save into the DB reservation data that is not managed by the legacy ERP. It uses an interface to the Car Manager to release the booking of a car when the reservation expires or ends. This component also have to create the reservation payments.\\\hline
+					Interaction & With the Payment Manager to create payments. With the MOM to retrieve and modify reservation data. \\\hline
+					Interfaces offered & \begin{itemize}
+						\item Edit Reservation for Reservation Handler
+					\end{itemize}\\\hline
+					Interfaces required & \begin{itemize}
+						\item MOM
+						\item Payment Reservation/Fees for Payment Manager
+						\item Allocate Car for Car Manager
+					\end{itemize}\\\hline
+					Implementation & Multi instance: one for each Driver or Passenger reservation.\\\hline
+				\end{tabular}
+			\end{center}
+			\pagebreak
+			
+			\subsubsection{Car Manager}
+			\begin{minipage}{\linewidth}
+				\makebox[\linewidth]{
+					\includegraphics[keepaspectratio=true,scale=0.6]{"img/components-detail/car-manager"}}
+			\end{minipage}
+			
+			\begin{center}
+				\centerline{\textbf{Car Manager}}	
+				\begin{tabular}{| l | p{9cm} |}\hline
+					Definition & Component that controls the cars informations.\\\hline
+					Responsibilities & This component provides the car status, the car location and if a car is booked or not. It uses an interface to the MOM to retrieve and update cars' informations.\\\hline
+					Interaction & With the Reservation Manager and with the Registered User.\\\hline
+					Interfaces offered & \begin{itemize}
+						\item Allocate Car for Reservation Manager
+						\item Car Status for Registered User
+						\item Car Location for Registered User
+					\end{itemize}\\\hline
+					Interfaces required & \begin{itemize}
+						\item MOM
+					\end{itemize}\\\hline
+					Implementation & Singleton.\\\hline
+				\end{tabular}
+			\end{center}
+			\pagebreak
+			
+			\subsubsection{Notification}
+			\begin{minipage}{\linewidth}
+				\makebox[\linewidth]{
+					\includegraphics[keepaspectratio=true,scale=0.6]{"img/components-detail/notification"}}
+			\end{minipage}
+			\begin{center}
+				\centerline{\textbf{Notification}}	
+				\begin{tabular}{| l | p{9cm} |}\hline
+					Definition & Component that controls notifications sent to the users.\\\hline
+					Responsibilities & This component is able to send messages to an user using SMS, Emails and in-app push notifications and it is also able to send an internal company notification through the MOM. \\\hline
+					Interaction & With User Manager to send Emails for verify the sign up procedure and to recover user's passwords. With Payment Manager to send payment summary. With Handyman Operator to send internal company notification. With the Reservation Manager to send notification to the user. \\\hline
+					Interfaces offered & \begin{itemize}
+						\item Send Email for User Manager
+						\item Send Payment Summary for Payment Manager
+						\item Send Notification for Reservation Manager
+						\item Report Problem for Handyman Operator
+					\end{itemize}\\\hline
+					Interfaces required & \begin{itemize}
+						\item MOM
+						\item Push Notification service
+						\item Email service
+						\item SMS service
+					\end{itemize}\\\hline
+					Implementation & Static class\\\hline
+				\end{tabular}
+			\end{center}
+			\pagebreak
+		
+		
+		\subsection{Deployment view}		
+		\begin{minipage}{\linewidth}
+			\makebox[\linewidth]{
+				\includegraphics[keepaspectratio=true,scale=0.5]{"img/deployment"}}
+				\vspace{5mm} %5mm vertical space
+		\end{minipage}
+		According to the previous schema the physical deployment of the system will composed by the web server ("Client" in the diagram), by the application server (all the managers, "MOM" and the "Notification" node in the diagram), by the database server ("DB") used for the necessary persistence not provided by the Legacy ERP.
+		\pagebreak
 		\subsection{Runtime view}
-		\subsection{Components Interfaces}
-		\subsection{Selected architectural styles and patterns}
-		\subsection{Other design decisions}
+			\subsubsection{Runtime Unit}
+			The schema below describes the behavior and interaction of the system's building blocks as runtime elements.
+			\begin{minipage}{\linewidth}
+				\vspace{5mm} %5mm vertical spaces
+				\makebox[\linewidth]{
+					\includegraphics[keepaspectratio=true,scale=0.35]{"img/runtime-diagram"}}
+				\vspace{5mm} %5mm vertical space
+			\end{minipage}
+			It clarify which elements have more than one instance at runtime and which not. In our case Profile Manager and Reservation Handler are multi-instance elements.
+			\pagebreak
+			\subsubsection{Sequence Diagram}
+			Follows some meaningful sequence diagrams that show the interaction between components at runtime.
+				\paragraph{Login} \mbox{}\\
+				The sequence diagram below represents what happens when a registered user logins to the system.\\
+				\begin{minipage}{\linewidth}
+					\vspace{5mm}
+					\makebox[\linewidth]{
+						\includegraphics[keepaspectratio=true,scale=0.5]{"img/sequence-diagram/login"}}
+					\vspace{5mm}
+				\end{minipage}
+				
+				\pagebreak
+				\paragraph{Car Reservation Request} \mbox{}\\
+				The sequence diagram below represents what happens when a Driver requests a car.\\
+				\begin{minipage}{\linewidth}
+					\vspace{5mm}
+					\makebox[\linewidth]{
+						\includegraphics[keepaspectratio=true,scale=0.4]{"img/sequence-diagram/car-reservation"}}
+					\vspace{5mm}
+				\end{minipage}
+				
+				\pagebreak
+				\paragraph{Seat Reservation Request} \mbox{}\\
+				The sequence diagram below represents what happens when a Passenger requests a seats.\\
+				\begin{minipage}{\linewidth}
+					\vspace{5mm}
+					\makebox[\linewidth]{
+						\includegraphics[keepaspectratio=true,scale=0.4]{"img/sequence-diagram/seat-reservation"}}
+					\vspace{5mm}
+				\end{minipage}
+				
+				\pagebreak
+				\paragraph{Delete Car Reservation} \mbox{}\\
+				The sequence diagram below represents what happens when a Driver deletes a car reservation.\\ \begin{minipage}{\linewidth}
+					\vspace{5mm}
+					\makebox[\linewidth]{
+						\includegraphics[keepaspectratio=true,scale=0.38]{"img/sequence-diagram/delete-car-reservation"}}
+					\vspace{5mm}
+				\end{minipage}
+				
+			\pagebreak
+		\subsection{Selected architectural styles, patterns and other design decisions}
+		The decision of using the client-server architecture is motivated by cost savings. In fact the company wants to use its server that already have. However, the \pej application is also designed to be implemented in a cloud architecture. In the future cloud architecture may be the best solution. In fact though the expected workload is static in case of a heavy load increase the cloud architecture offers an elastic scaling  (see the figure below).\\
+		\begin{minipage}{\linewidth}
+			\vspace{5mm}
+			\makebox[\linewidth]{
+				\includegraphics[keepaspectratio=true,scale=4.5]{"img/static-workload-sketch"}}
+			\vspace{5mm}
+		\end{minipage}
+		Some software design patterns are used in the design of the system, for instance the Factory method pattern is used for the creation of instances for Reservations and the Profiles, while the Singleton pattern is used for Car Manager.\\
+		The system have to be always fast and responsive, also in case of a high number of requests and accesses to the service at the same time, for this reason parallelization is highly used;
+		\pagebreak
+		
 	\section{Algorithm Design}
-	\section{User Interface Design}
+	Follows some distinctive algorithms of \pej. All algorithms are presented with pseudocode and
+	flowchart diagrams.
+		\subsection{Payment} \label{sec:payment}
+		Follows the payment algorithm. It represents how the system calculate and deducts money from the payments method chosen by the user. This algorithm is part of Payment Manager component. It gets all the reservation's informations, calculate the payment with the function cost (see below for more details) and sends the payment summary. It interacts with the Reservation Manager, with the MOM and the Notification component.
+		
+			\subsubsection{Cost Function}
+			There are different functions cost, one for each case:
+			\begin{itemize}
+				\item Non Shared Ride
+				\item Shared Ride
+				\item Fees
+			\end{itemize}
+			
+			\paragraph{Non Shared Ride}
+			This function is chosen in case of a non shared ride.
+				\begin{itemize}
+					\item \textit{t}: movement time
+					\item \textit{N}: number of seats occupied during the ride (for at least 50\% of the movement time)
+					\item \textit{k}: hourly cost float constant [\euro/hour]
+				\end{itemize}
+				\begin{equation}
+					f_{cost}(t)= 
+					\begin{cases}
+					{kt},& N < 3\\
+					{kt(0.9)},& N \geq 3
+					\end{cases}
+				\end{equation}
+			
+			\paragraph{Shared Ride}
+			This function is chosen in case of a shared ride. It is calculated for each \textit{i}-th registered user that take part to the ride.
+				\begin{itemize}
+					\item \textit{t}: movement time
+					\item \textit{N}: number of seats occupied during the ride (for at least 50\% of the movement time)
+					\item \textit{n}: number of seats occupied by registered user
+					\item \textit{k}: hourly cost float constant [\euro/hour]
+					\item \textit{S}: scale factor
+				\end{itemize}
+				
+				\begin{equation}
+					S_{i} = \dfrac {n}{N}
+				\end{equation}
+				
+				\begin{equation}
+					{f_{cost}}_{i}(t)= 
+					\begin{cases}
+					{S_{i}kt},& N < 3\\
+					{S_{i}kt(0.9)},& N \geq 3
+					\end{cases}
+				\end{equation}
+				
+			\paragraph{Fees} This function is calculated when the system have to discourage bad behavior (i.e. the driver do not pick-up the car within one hour from the reservation). It is time invariant.
+				\begin{equation}
+				f_{cost}= \text{const} 
+				\end{equation}
+				
+			\subsubsection{Pseudocode and Flowchart}
+				\lstinputlisting[language=C]{c/payment.c}
+				\begin{minipage}{\linewidth}
+					\makebox[\linewidth]{
+						\includegraphics[keepaspectratio=true,scale=0.6]{"img/flowcharts/payment"}}
+				\end{minipage}
+				\pagebreak
+			
+		\subsection{Good car distribution} \label{sec:carDistribution}
+		Follows the car distribution algorithm. It represents how the system allocates to handymand operators cars to be moved. It interacts with the MOM to get cars that have to be moved, the initial and the final location for each auto.
+			\subsubsection{Pseudocode and Flowchart}
+			\lstinputlisting[language=C]{c/distribution.c}
+			\begin{minipage}{\linewidth}
+				\makebox[\linewidth]{
+					\includegraphics[keepaspectratio=true,scale=0.6]{"img/flowcharts/distribution"}}
+			\end{minipage}
+			\pagebreak
+			
+	
+	\include{includes/user-interfaces}
 	\section{Requirements Traceability}
+	The following table shows the mapping between the required functionalities of the system and the components used to implement and satisfy them.
+	\input{includes/goals.tex}
+	\begin{center}
+		\begin{longtable}{ p{7cm}  p{8cm} }\\ \hline
+			\centerline{\textbf{Goals}} & \centerline{\textbf{Assigned component}} \\\hline
+			\gSystemDiscounts & Payment Manager handles the payment algorithm that includes discounts. (for more details see section~\ref{sec:payment}).\\\hline
+			\gSystemFees &  Payment Manager handles the payment algorithm that includes fees. (for more details see section~\ref{sec:payment}).\\\hline
+			\gSystemDistribution & Car Manager handles the distribution of the cars in the territory. (for more details see section~\ref{sec:carDistribution}).\\\hline
+			\gSystemShare & The Reservation Manager component handles cars reservations and allows shared rides.\\\hline
+			\gVisitorSignUp & The User Manager component allows a visitor to sign up to the service.\\\hline
+			\gRegisteredLogin & The User Manager component allows to log in the system.\\\hline
+			\gRegisteredReserve & The Reservation Manager component handles cars reservations and allows to reserve a car.\\\hline
+			\gRegisteredDeleteReservation & The Reservation Manager component handles cars reservations and allows to delete a reservation.\\\hline
+			\gRegisteredSearchDistance & Car Manager component allows to find the locations of available cars within a certain distance from the user.\\\hline
+			\gRegisteredSearchAddress &  Car Manager component allows to find the locations of available cars at a specified address.\\\hline
+			\gRegisteredLockUnlock & Car Manager component allows to lock and unlock a booked car.\\\hline
+			\gPassengerShare &  The Reservation Manager component handles cars reservations and allows to use a car for a shared ride.\\\hline
+			\gHandymanRecharge & Car Manager component allows to know the location of the car that has to be charged.\\\hline
+			\gHandymanReportIssue & Notification component allows to report a problem.\\\hline
+		\end{longtable}
+	\end{center} 
+	\pagebreak
+	
 	\section{Effort Spent}
 		\subsection{Hours of work} The time spent to redact this document:
 		\begin{itemize}
-			\item Bresich Matteo: 2 hours.
+			\item Bresich Matteo: 66 hours.
 		\end{itemize}
 		
 		\begin{center}
 			\begin{tabular}{ | l | l |}
 				\hline
 				Days & Hours of work\\ \hline
-				28/11/16 & 2h\\\hline
+				28/11/16 & 3h\\\hline
+				03/12/16 & 4h\\\hline
+				05/12/16 & 10h\\\hline
+				06/12/16 & 10h\\\hline
+				07/12/16 & 10h\\\hline
+				08/12/16 & 8h\\\hline
+				09/12/16 & 8h\\\hline
+				10/12/16 & 10h\\\hline
+				11/12/16 & 3h\\\hline
 				
 			\end{tabular}
 		\end{center}
 	\section{References}
+		\begin{itemize}
+			\item TeXstudio v2.11.2 (http://www.texstudio.org/) to produce this document.
+			\item Evolus Pencil v2.0.5 (http://pencil.evolus.vn/) to generate mockups.
+			\item Astah Professional 7.1.0 (http://astah.net/) to create Use Cases Diagrams, Sequence Diagrams, Class Diagrams and State Machine Diagrams.
+		\end{itemize}
 \end{document}

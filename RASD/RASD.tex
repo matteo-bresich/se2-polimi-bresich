@@ -1,3 +1,4 @@
+\PassOptionsToPackage{dvipsnames}{xcolor}
 \documentclass{article}
 \usepackage{graphicx,wrapfig,hyperref,pdfpages,geometry}
 
@@ -134,7 +135,7 @@
 		\subsection{Identifying Actors}
 			\begin{itemize}
 				\item Registered Users: are the final users of the car sharing service. Only they can book a car by calling the call-center or by using the web or mobile app, and use it.
-				\item Passenger: is a registered user that can reserve a number of seats of a shared ride using the \pej application.
+				\item Passenger: is a registered user that can reserve a number of seats of a shared ride using the\\ \pej application.
 				\item Handyman Operator: is a company employee that recharges low battery cars and move cars from a safe area to another to ensure that in each area there is the minimum number of cars available.
 			\end{itemize}
 		\subsection{Goals} \label{sec:goals}
@@ -168,7 +169,7 @@
 		\subsubsection{Regulatory Policies \& Safety and security}
 		The system must be in accordance with local laws and policies. It must ask the user for the permission to acquire, store and process personal data and web cookies. The system must offer the possibility to delete all personal data.
 		\subsubsection{Hardware limitations}
-		\pej requires a computer or a smartphone connected to the internet. The mobile app requires the GPS module. The following list highlights some minimal conditions under which the system must operate: \\
+		\pej requires a computer or a smartphone connected to the internet. The mobile app requires the GPS module. The following list highlights some minimal conditions under which the system must operate: 
 		
 			\begin{center}
 				\begin{tabular}{ | l | p{5cm} |}
@@ -192,7 +193,7 @@
 				\end{tabular}
 			\end{center}
 		\subsubsection{Reliability requirements}
-		The system must have a minimum availability of 99\%.
+		The system must have a minimum availability of 98\%.
 		\subsubsection{Criticality of the application} 
 		The system is not used in critical applications for life.
 		\subsubsection{Interfaces to other applications}
@@ -705,7 +706,7 @@
 			\subsubsection{Performance Requirements}
 			To ensure an high level of usability of the service it is important to calibrate the server resources. The objective is to avoid a deadlock due to the overload in situations of heavy loads.
 			\subsubsection{Availability \& Reliability}
-			The system must guarantee an availability of 99\%. The application will be hosted by multiple redundant servers to prevent service failures due to hardware faults. All servers will be equipped with an autonomous power supply backup system.
+			The system must guarantee an availability of 98\%. The application will be hosted by multiple redundant servers to prevent service failures due to hardware faults. All servers will be equipped with an autonomous power supply backup system.
 			
 			\subsubsection{Security}
 			All the communications between servers and clients must be protected by strong encryption using the SSL protocol. Users' passwords must not be stored in plain text in the database. The application must generate a snapshot of the last 10 days system's state.
