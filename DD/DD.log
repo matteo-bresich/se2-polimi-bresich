@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.27)  29 NOV 2016 11:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.8)  11 DEC 2016 18:50
 entering extended mode
 **./DD.tex
 (DD.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -21,31 +21,39 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx
+.sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.s
+ty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics
+.sty"
 Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\grap
+hics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdft
+ex.def"
 File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwar
+err.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmd
+s.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count87
@@ -53,7 +61,8 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.s
+ty"
 \wrapoverhang=\dimen105
 \WF@size=\dimen106
 \c@WF@wrappedlines=\count88
@@ -61,14 +70,17 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \WF@everypar=\toks15
 Package: wrapfig 2003/01/31  v 3.6
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref
+.sty"
 Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub
+-hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub
+-generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -108,25 +120,30 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex
+.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.
+sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoption
+s.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen107
 \Hy@linkcounter=\count89
 \Hy@pagecounter=\count90
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.d
+ef"
 File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count91
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref
+.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4486.
@@ -137,8 +154,7 @@ Package hyperref Info: Backreferencing OFF on input line 4506.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4735.
 \c@Hy@tempcnt=\count92
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+ ("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -163,25 +179,28 @@ LaTeX Info: Redefining \pageref on input line 6416.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.
+def"
 File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
 \Fld@listcount=\count97
 \c@bookmark@seq@number=\count98
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfil
+echeck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip43
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdfpages\pdfpages
+.sty"
 Package: pdfpages 2016/04/19 v0.5f Insert pages of external PDF documents (AM)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+) ("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count99
 \calc@Bcount=\count100
@@ -194,13 +213,16 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count101
 \calc@Cskip=\skip46
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.s
+ty"
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
+"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\colo
+r.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -217,7 +239,8 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 \AM@pagewidth=\dimen113
 \AM@pageheight=\dimen114
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdfpages\pppdftex
+.def"
 File: pppdftex.def 2016/04/19 v0.5f Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box27
@@ -226,7 +249,8 @@ File: pppdftex.def 2016/04/19 v0.5f Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count102
 \AM@templatesizebox=\box28
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry
+.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@cnth=\count103
 \Gm@cntv=\count104
@@ -241,9 +265,125 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layoutvoffset=\dimen122
 \Gm@dimlist=\toks18
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry
+.cfg"))
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.s
+ty"
+Package: amsmath 2016/06/28 v2.15d AMS math features
+\@mathmargin=\skip47
+
+For additional information on amsmath, use the `?' option.
+
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.s
+ty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.st
+y"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen123
+))
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.st
+y"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen124
+)
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.st
+y"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count106
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count107
+\leftroot@=\count108
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count109
+\DOTSCASE@=\count110
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen125
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count111
+\c@MaxMatrixCols=\count112
+\dotsspace@=\muskip11
+\c@parentequation=\count113
+\dspbrk@lvl=\count114
+\tag@help=\toks20
+\row@=\count115
+\column@=\count116
+\maxfields@=\count117
+\andhelp@=\toks21
+\eqnshift@=\dimen126
+\alignsep@=\dimen127
+\tagshift@=\dimen128
+\tagwidth@=\dimen129
+\totwidth@=\dimen130
+\lineht@=\dimen131
+\@envbody=\toks22
+\multlinegap=\skip48
+\multlinetaggap=\skip49
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\longtable.s
+ty"
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip50
+\LTright=\skip51
+\LTpre=\skip52
+\LTpost=\skip53
+\LTchunksize=\count118
+\LTcapwidth=\dimen132
+\LT@head=\box31
+\LT@firsthead=\box32
+\LT@foot=\box33
+\LT@lastfoot=\box34
+\LT@cols=\count119
+\LT@rows=\count120
+\c@LT@tables=\count121
+\c@LT@chunks=\count122
+\LT@p@ftn=\toks24
+)
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\eurosym\eurosym.s
+ty"
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box35
+)
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings
+.sty"
+\lst@mode=\count123
+\lst@gtempboxa=\box36
+\lst@token=\toks25
+\lst@length=\count124
+\lst@currlwidth=\dimen133
+\lst@column=\count125
+\lst@pos=\count126
+\lst@lostspace=\dimen134
+\lst@width=\dimen135
+\lst@newlines=\count127
+\lst@lineno=\count128
+\lst@maxwidth=\dimen136
+
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.
+sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count129
+\lst@skipnumbers=\count130
+\lst@framebox=\box37
+)
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings
+.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
 Package hyperref Info: Option `colorlinks' set `true' on input line 17.
- (DD.aux)
+ (DD.aux (includes/user-interfaces.aux))
 \openout1 = `DD.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
@@ -261,23 +401,27 @@ LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
 
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.m
+kii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count106
-\scratchdimen=\dimen123
-\scratchbox=\box29
-\nofMPsegments=\count107
-\nofMParguments=\count108
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count109
-\MPscratchDim=\dimen124
-\MPnumerator=\count110
-\makeMPintoPDFobject=\count111
-\everyMPtoPDFconversion=\toks20
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+\scratchcounter=\count131
+\scratchdimen=\dimen137
+\scratchbox=\box38
+\nofMPsegments=\count132
+\nofMParguments=\count133
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count134
+\MPscratchDim=\dimen138
+\MPnumerator=\count135
+\makeMPintoPDFobject=\count136
+\everyMPtoPDFconversion=\toks27
+)
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf
+-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.s
+ty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -287,28 +431,33 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box30
+\AtBeginShipoutBox=\box39
 Package hyperref Info: Link coloring ON on input line 23.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.
+sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettit
+lestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count112
+\c@section@level=\count137
 )
 LaTeX Info: Redefining \ref on input line 23.
 LaTeX Info: Redefining \pageref on input line 23.
 LaTeX Info: Redefining \nameref on input line 23.
-
-(DD.out) (DD.out)
+ (DD.out) (DD.out)
 \@outlinefile=\write3
 \openout3 = `DD.out'.
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
+
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\pdflscap
+e.sty"
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
- ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\lscape.s
+ty"
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
@@ -347,75 +496,294 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<"img/logo-polimi".png, id=83, 666.49pt x 489.83pt>
+\c@lstlisting=\count138
+<"img/logo-polimi".png, id=211, 666.49pt x 489.83pt>
 File: "img/logo-polimi".png Graphic file (type png)
 
 <use "img/logo-polimi".png>
 Package pdftex.def Info: "img/logo-polimi".png used on input line 35.
 (pdftex.def)             Requested size: 469.75502pt x 345.24797pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 40.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 40.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 40.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./img/logo-polimi.png>] [
-2
+{C:/Users/Matteo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./img/logo
+-polimi.png>] [2
 
-] (DD.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 3.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 3.
-)
+] (DD.toc [1
+
+])
 \tf@toc=\write4
 \openout4 = `DD.toc'.
 
- [1
+ [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 73.
 
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 86.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 86.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 73.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98 \end{document}
-                    [1]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
- (DD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
+l.95 		\subsection
+                  {Document Structure} [1]pdfTeX warning (ext4): destination wi
+th the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.107 
+       [2] <"img/architecture".png, id=304, 255.95625pt x 472.76625pt>
+File: "img/architecture".png Graphic file (type png)
+
+<use "img/architecture".png>
+Package pdftex.def Info: "img/architecture".png used on input line 113.
+(pdftex.def)             Requested size: 140.92793pt x 260.30357pt.
+ [3 <./img/architecture.png>]
+<"img/package-design".png, id=315, 1055.44313pt x 311.66437pt>
+File: "img/package-design".png Graphic file (type png)
+
+<use "img/package-design".png>
+Package pdftex.def Info: "img/package-design".png used on input line 127.
+(pdftex.def)             Requested size: 422.77664pt x 124.8395pt.
+
+<"img/detailed-package-design".png, id=316, 451.6875pt x 632.3625pt>
+File: "img/detailed-package-design".png Graphic file (type png)
+
+<use "img/detailed-package-design".png>
+Package pdftex.def Info: "img/detailed-package-design".png used on input line 1
+48.
+(pdftex.def)             Requested size: 375.80544pt x 526.15372pt.
+ [4 <./img/package-design.png>] [5 <./img/detailed-package-design.png>]
+<"img/component-view".png, id=327, 1054.6903pt x 688.07062pt>
+File: "img/component-view".png Graphic file (type png)
+
+<use "img/component-view".png>
+Package pdftex.def Info: "img/component-view".png used on input line 154.
+(pdftex.def)             Requested size: 422.77664pt x 275.81133pt.
+ [6 <./img/component-view.png>]
+<"img/components-detail/user-manager".png, id=333, 660.21657pt x 398.99063pt>
+File: "img/components-detail/user-manager".png Graphic file (type png)
+
+<use "img/components-detail/user-manager".png>
+Package pdftex.def Info: "img/components-detail/user-manager".png used on input
+ line 163.
+(pdftex.def)             Requested size: 330.10747pt x 199.49483pt.
+ [7 <./img/components-detail/user-manager.png>] [8] [9]
+<"img/components-detail/payment-manager".png, id=348, 287.57437pt x 157.33781pt
+>
+File: "img/components-detail/payment-manager".png Graphic file (type png)
+ <use "img/components-detail/payment-manager".png>
+Package pdftex.def Info: "img/components-detail/payment-manager".png used on in
+put line 240.
+(pdftex.def)             Requested size: 172.54594pt x 94.4034pt.
+ [10 <./img/components-detail/payment-manager.png>]
+<"img/components-detail/reservation-manager".png, id=354, 689.57625pt x 374.900
+62pt>
+File: "img/components-detail/reservation-manager".png Graphic file (type png)
+ <use "img/components-detail/reservation-manager".png>
+Package pdftex.def Info: "img/components-detail/reservation-manager".png used o
+n input line 264.
+(pdftex.def)             Requested size: 413.74893pt x 224.94211pt.
+ [11 <./img/components-detail/reservation-manager.png>] [12]
+<"img/components-detail/car-manager".png, id=364, 231.86626pt x 168.63pt>
+File: "img/components-detail/car-manager".png Graphic file (type png)
+
+<use "img/components-detail/car-manager".png>
+Package pdftex.def Info: "img/components-detail/car-manager".png used on input 
+line 322.
+(pdftex.def)             Requested size: 139.12082pt x 101.17877pt.
+ [13 <./img/components-detail/car-manager.png>]
+<"img/components-detail/notification".png, id=370, 460.72125pt x 207.77625pt>
+File: "img/components-detail/notification".png Graphic file (type png)
+
+<use "img/components-detail/notification".png>
+Package pdftex.def Info: "img/components-detail/notification".png used on input
+ line 347.
+(pdftex.def)             Requested size: 276.43488pt x 124.6667pt.
+ [14 <./img/components-detail/notification.png>] <"img/deployment".png, id=376,
+ 997.47656pt x 804.00375pt>
+File: "img/deployment".png Graphic file (type png)
+
+<use "img/deployment".png>
+Package pdftex.def Info: "img/deployment".png used on input line 376.
+(pdftex.def)             Requested size: 498.73706pt x 402.0009pt.
+ [15 <./img/deployment.png>]
+<"img/runtime-diagram".png, id=383, 1650.165pt x 729.47531pt>
+File: "img/runtime-diagram".png Graphic file (type png)
+
+<use "img/runtime-diagram".png>
+Package pdftex.def Info: "img/runtime-diagram".png used on input line 387.
+(pdftex.def)             Requested size: 577.5664pt x 255.32018pt.
+ [16 <./img/runtime-diagram.png>]
+<"img/sequence-diagram/login".png, id=389, 1043.39813pt x 593.21625pt>
+File: "img/sequence-diagram/login".png Graphic file (type png)
+
+<use "img/sequence-diagram/login".png>
+Package pdftex.def Info: "img/sequence-diagram/login".png used on input line 39
+9.
+(pdftex.def)             Requested size: 521.69778pt x 296.60739pt.
+ [17 <./img/sequence-diagram/login.png>]
+<"img/sequence-diagram/car-reservation".png, id=395, 1284.29813pt x 644.4075pt>
+File: "img/sequence-diagram/car-reservation".png Graphic file (type png)
+<use "img/sequence-diagram/car-reservation".png>
+Package pdftex.def Info: "img/sequence-diagram/car-reservation".png used on inp
+ut line 409.
+(pdftex.def)             Requested size: 513.71016pt x 257.75844pt.
+ [18 <./img/sequence-diagram/car-reservation.png>]
+<"img/sequence-diagram/seat-reservation".png, id=401, 1219.55624pt x 651.18282p
+t>
+File: "img/sequence-diagram/seat-reservation".png Graphic file (type png)
+ <use "img/sequence-diagram/seat-reservation".png>
+Package pdftex.def Info: "img/sequence-diagram/seat-reservation".png used on in
+put line 419.
+(pdftex.def)             Requested size: 487.81386pt x 260.4685pt.
+ [19 <./img/sequence-diagram/seat-reservation.png>]
+<"img/sequence-diagram/delete-car-reservation".png, id=407, 1543.26563pt x 804.
+00375pt>
+File: "img/sequence-diagram/delete-car-reservation".png Graphic file (type png)
+
+ <use "img/sequence-diagram/delete-car-reservation".png>
+Package pdftex.def Info: "img/sequence-diagram/delete-car-reservation".png used
+ on input line 428.
+(pdftex.def)             Requested size: 586.44704pt x 305.5246pt.
+ [20 <./img/sequence-diagram/delete-car-reservation.png>]
+<"img/static-workload-sketch".png, id=413, 90.5784pt x 32.64195pt>
+File: "img/static-workload-sketch".png Graphic file (type png)
+
+<use "img/static-workload-sketch".png>
+Package pdftex.def Info: "img/static-workload-sketch".png used on input line 43
+8.
+(pdftex.def)             Requested size: 407.60176pt x 146.88837pt.
+ [21 <./img/static-workload-sketch.png (PNG copy)>]
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1
+.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.
+sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 502.
+ (c/payment.c [22])
+<"img/flowcharts/payment".png, id=431, 493.845pt x 701.62125pt>
+File: "img/flowcharts/payment".png Graphic file (type png)
+
+<use "img/flowcharts/payment".png>
+Package pdftex.def Info: "img/flowcharts/payment".png used on input line 505.
+(pdftex.def)             Requested size: 296.30928pt x 420.97598pt.
+ [23 <./img/flowcharts/payment.png>]
+(c/distribution.c)
+<"img/flowcharts/distribution".png, id=454, 537.50812pt x 714.41907pt>
+File: "img/flowcharts/distribution".png Graphic file (type png)
+
+<use "img/flowcharts/distribution".png>
+Package pdftex.def Info: "img/flowcharts/distribution".png used on input line 5
+15.
+(pdftex.def)             Requested size: 322.50735pt x 428.65475pt.
+ [24 <./img/flowcharts/distribution.png>]
+\openout2 = `includes/user-interfaces.aux'.
+
+ (includes/user-interfaces.tex [25
+
+]
+<"img/ui/registration".png, id=472, 698.61pt x 1505.625pt>
+File: "img/ui/registration".png Graphic file (type png)
+
+<use "img/ui/registration".png>
+Package pdftex.def Info: "img/ui/registration".png used on input line 7.
+(pdftex.def)             Requested size: 281.85587pt x 607.45442pt.
+ [26 <./img/ui/registration.png>]
+<"img/ui/login".png, id=478, 698.61pt x 1505.625pt>
+File: "img/ui/login".png Graphic file (type png)
+ <use "img/ui/login".png>
+Package pdftex.def Info: "img/ui/login".png used on input line 13.
+(pdftex.def)             Requested size: 281.85587pt x 607.45442pt.
+
+[27 <./img/ui/login.png>]
+<"img/ui/private-area".png, id=485, 698.61pt x 1505.625pt>
+File: "img/ui/private-area".png Graphic file (type png)
+
+<use "img/ui/private-area".png>
+Package pdftex.def Info: "img/ui/private-area".png used on input line 19.
+(pdftex.def)             Requested size: 281.85587pt x 607.45442pt.
+ [28 <./img/ui/private-area.png>]
+<"img/ui/private-area-employee".png, id=491, 698.61pt x 1505.625pt>
+File: "img/ui/private-area-employee".png Graphic file (type png)
+
+<use "img/ui/private-area-employee".png>
+Package pdftex.def Info: "img/ui/private-area-employee".png used on input line 
+25.
+(pdftex.def)             Requested size: 281.85587pt x 607.45442pt.
+ [29 <./img/ui/private-area-employee.png>] <"img/ui/search-car".png, id=497, 69
+8.61pt x 1505.625pt>
+File: "img/ui/search-car".png Graphic file (type png)
+
+<use "img/ui/search-car".png>
+Package pdftex.def Info: "img/ui/search-car".png used on input line 31.
+(pdftex.def)             Requested size: 281.85587pt x 607.45442pt.
+ [30 <./img/ui/search-car.png (PNG copy)>]
+<"img/ui/delete-reservation".png, id=502, 698.61pt x 1505.625pt>
+File: "img/ui/delete-reservation".png Graphic file (type png)
+
+<use "img/ui/delete-reservation".png>
+Package pdftex.def Info: "img/ui/delete-reservation".png used on input line 37.
+
+(pdftex.def)             Requested size: 281.85587pt x 607.45442pt.
+ [31 <./img/ui/delete-reservation.png (PNG copy)>] <"img/ui/get-cars-recharge".
+png, id=507, 698.61pt x 1505.625pt>
+File: "img/ui/get-cars-recharge".png Graphic file (type png)
+
+<use "img/ui/get-cars-recharge".png>
+Package pdftex.def Info: "img/ui/get-cars-recharge".png used on input line 43.
+(pdftex.def)             Requested size: 281.85587pt x 607.45442pt.
+ [32 <./img/ui/get-cars-recharge.png (PNG copy)>] <"img/ui/edit-profile".png, i
+d=512, 698.61pt x 1505.625pt>
+File: "img/ui/edit-profile".png Graphic file (type png)
+
+<use "img/ui/edit-profile".png>
+Package pdftex.def Info: "img/ui/edit-profile".png used on input line 49.
+(pdftex.def)             Requested size: 281.85587pt x 607.45442pt.
+) [33 <./img/ui/edit-profile.png (PNG copy)>]
+(includes/goals.tex) [34
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 573.
+ [35]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 573.
+ (DD.aux (includes/user-interfaces.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 573.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 573.
 Package rerunfilecheck Info: File `DD.out' has not changed.
-(rerunfilecheck)             Checksum: 0FE46C7AF58E8C645208837A313D4CA5;1260.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 98.
+(rerunfilecheck)             Checksum: 6AD4F0044FD3CDA840CA2EAA9C65665A;3700.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 573.
  ) 
 Here is how much of TeX's memory you used:
- 6817 strings out of 493334
- 99832 string characters out of 3139248
- 198257 words of memory out of 3000000
- 10259 multiletter control sequences out of 15000+200000
- 8549 words of font info for 30 fonts, out of 3000000 for 9000
+ 9232 strings out of 493333
+ 137736 string characters out of 3129709
+ 267467 words of memory out of 3000000
+ 12476 multiletter control sequences out of 15000+200000
+ 10140 words of font info for 37 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
- 37i,6n,39p,216b,322s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmti12.pfb>
-Output written on DD.pdf (4 pages, 186062 bytes).
+ 37i,9n,52p,844b,1736s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Matteo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmbx10.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmbx12.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Matteo/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Matteo/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/User
+s/Matteo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10
+.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr12.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr17.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Matteo/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Matteo/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Us
+ers/Matteo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/eurosym/feymr10
+.pfb>
+Output written on DD.pdf (39 pages, 2118192 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
- 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 599 PDF objects out of 1000 (max. 8388607)
+ 131 named destinations out of 1000 (max. 500000)
+ 552 words of extra memory for PDF output out of 10000 (max. 10000000)
 

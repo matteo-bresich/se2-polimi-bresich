@@ -100,12 +100,12 @@ fact seatReservationMustHaveCarReservation {
 }
 
 fact seatReservationMustHaveTheSameFatherReservationCar {
-	all rs:SeatReservation | all rc: CarReservation | (rs in rc.seatsReservation) => (rs.car = rc.car)
+	all rs:SeatReservation | all rc: CarReservation | (rs in rc.seatsReservation) -> (rs.car = rc.car)
 }
 
 //check noPassengersOnNonSharedReservation
 assert noPassengersOnNonSharedReservation {
-	all r:CarReservation | (r.isShared=False) => (#seatsReservation = 0)
+	all r:CarReservation | (r.isShared = False) -> (#seatsReservation = 0)
 }
 
 //Predicates
