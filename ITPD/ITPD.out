@@ -1,0 +1,45 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Revision History}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Purpose and Scope}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{List of Definitions and Abbreviations}{section.1}% 4
+\BOOKMARK [3][-]{subsubsection.1.3.1}{Definitions}{subsection.1.3}% 5
+\BOOKMARK [3][-]{subsubsection.1.3.2}{Acronyms}{subsection.1.3}% 6
+\BOOKMARK [2][-]{subsection.1.4}{List of Reference Documents}{section.1}% 7
+\BOOKMARK [1][-]{section.2}{Integration Strategy}{}% 8
+\BOOKMARK [2][-]{subsection.2.1}{Entry Criteria}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.2}{Elements to be Integrated}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.3}{Integration Testing Strategy}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.4}{Sequence of Component/Function Integration}{section.2}% 12
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Sequence of integration for User Manager sub-system}{subsection.2.4}% 13
+\BOOKMARK [3][-]{subsubsection.2.4.2}{Sequence of integration for Reservation Manager sub-system}{subsection.2.4}% 14
+\BOOKMARK [3][-]{subsubsection.2.4.3}{Sequence of integration for User}{subsection.2.4}% 15
+\BOOKMARK [3][-]{subsubsection.2.4.4}{Sequence of integration for User Manager}{subsection.2.4}% 16
+\BOOKMARK [3][-]{subsubsection.2.4.5}{Sequence of integration for Payment Manager}{subsection.2.4}% 17
+\BOOKMARK [3][-]{subsubsection.2.4.6}{Sequence of integration for Reservation Manager}{subsection.2.4}% 18
+\BOOKMARK [1][-]{section.3}{Individual Steps and Test Description}{}% 19
+\BOOKMARK [2][-]{subsection.3.1}{Integration Test Case Specifications}{section.3}% 20
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Integration Test for User Manager sub-system}{subsection.3.1}% 21
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Integration Test for Reservation Manager sub-system}{subsection.3.1}% 22
+\BOOKMARK [3][-]{subsubsection.3.1.3}{Integration Test for User and User Manager}{subsection.3.1}% 23
+\BOOKMARK [3][-]{subsubsection.3.1.4}{Integration Test for User and Car Manager}{subsection.3.1}% 24
+\BOOKMARK [3][-]{subsubsection.3.1.5}{Integration Test for User and Reservation Manager}{subsection.3.1}% 25
+\BOOKMARK [3][-]{subsubsection.3.1.6}{Integration Test for User and Notification}{subsection.3.1}% 26
+\BOOKMARK [3][-]{subsubsection.3.1.7}{Integration Test for User Manager and Notification}{subsection.3.1}% 27
+\BOOKMARK [3][-]{subsubsection.3.1.8}{Integration Test for Payment Manager and Notification}{subsection.3.1}% 28
+\BOOKMARK [3][-]{subsubsection.3.1.9}{Integration Test for Reservation Manager and Payment Manager}{subsection.3.1}% 29
+\BOOKMARK [3][-]{subsubsection.3.1.10}{Integration Test for Reservation Manager and Car Manager}{subsection.3.1}% 30
+\BOOKMARK [3][-]{subsubsection.3.1.11}{Integration Test for Reservation Manager and Notification}{subsection.3.1}% 31
+\BOOKMARK [2][-]{subsection.3.2}{Test procedures}{section.3}% 32
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Test procedure for User Manager sub-system}{subsection.3.2}% 33
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Test procedure for Reservation Manager sub-system}{subsection.3.2}% 34
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Test procedure for components involved in user login}{subsection.3.2}% 35
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Test procedure for components involved in car/seat reservation}{subsection.3.2}% 36
+\BOOKMARK [3][-]{subsubsection.3.2.5}{Test procedure for components involved in delete a car reservation}{subsection.3.2}% 37
+\BOOKMARK [1][-]{section.4}{Tools and Test Equipment Required}{}% 38
+\BOOKMARK [1][-]{section.5}{Program Stubs and Test Data Required}{}% 39
+\BOOKMARK [2][-]{subsection.5.1}{Stubs}{section.5}% 40
+\BOOKMARK [2][-]{subsection.5.2}{Drivers}{section.5}% 41
+\BOOKMARK [2][-]{subsection.5.3}{Data required}{section.5}% 42
+\BOOKMARK [1][-]{section.6}{Effort Spent}{}% 43
+\BOOKMARK [2][-]{subsection.6.1}{Hours of work}{section.6}% 44
+\BOOKMARK [1][-]{section.7}{References}{}% 45
