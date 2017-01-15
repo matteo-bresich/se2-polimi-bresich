@@ -1,0 +1,46 @@
+\nobreakspace {}\hfill \textrm {Page}\par 
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Revision History}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Purpose and Scope}{1}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}List of Definitions and Abbreviations}{1}{subsection.1.3}
+\contentsline {subsubsection}{\numberline {1.3.1}Definitions}{1}{subsubsection.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.2}Acronyms}{1}{subsubsection.1.3.2}
+\contentsline {subsection}{\numberline {1.4}List of Reference Documents}{1}{subsection.1.4}
+\contentsline {section}{\numberline {2}Integration Strategy}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Entry Criteria}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Elements to be Integrated}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Integration Testing Strategy}{3}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Sequence of Component/Function Integration}{3}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Sequence of integration for User Manager sub-system}{3}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Sequence of integration for Reservation Manager sub-system}{3}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Sequence of integration for User}{4}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.4}Sequence of integration for User Manager}{4}{subsubsection.2.4.4}
+\contentsline {subsubsection}{\numberline {2.4.5}Sequence of integration for Payment Manager}{4}{subsubsection.2.4.5}
+\contentsline {subsubsection}{\numberline {2.4.6}Sequence of integration for Reservation Manager}{4}{subsubsection.2.4.6}
+\contentsline {section}{\numberline {3}Individual Steps and Test Description}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Integration Test Case Specifications}{5}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Integration Test for User Manager sub-system}{5}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Integration Test for Reservation Manager sub-system}{6}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}Integration Test for User and User Manager}{7}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}Integration Test for User and Car Manager}{8}{subsubsection.3.1.4}
+\contentsline {subsubsection}{\numberline {3.1.5}Integration Test for User and Reservation Manager}{9}{subsubsection.3.1.5}
+\contentsline {subsubsection}{\numberline {3.1.6}Integration Test for User and Notification}{10}{subsubsection.3.1.6}
+\contentsline {subsubsection}{\numberline {3.1.7}Integration Test for User Manager and Notification}{11}{subsubsection.3.1.7}
+\contentsline {subsubsection}{\numberline {3.1.8}Integration Test for Payment Manager and Notification}{12}{subsubsection.3.1.8}
+\contentsline {subsubsection}{\numberline {3.1.9}Integration Test for Reservation Manager and Payment Manager}{13}{subsubsection.3.1.9}
+\contentsline {subsubsection}{\numberline {3.1.10}Integration Test for Reservation Manager and Car Manager}{14}{subsubsection.3.1.10}
+\contentsline {subsubsection}{\numberline {3.1.11}Integration Test for Reservation Manager and Notification}{15}{subsubsection.3.1.11}
+\contentsline {subsection}{\numberline {3.2}Test procedures}{16}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Test procedure for User Manager sub-system}{16}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Test procedure for Reservation Manager sub-system}{16}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Test procedure for components involved in user login}{17}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Test procedure for components involved in car/seat reservation}{18}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.5}Test procedure for components involved in delete a car reservation}{20}{subsubsection.3.2.5}
+\contentsline {section}{\numberline {4}Tools and Test Equipment Required}{21}{section.4}
+\contentsline {section}{\numberline {5}Program Stubs and Test Data Required}{21}{section.5}
+\contentsline {subsection}{\numberline {5.1}Stubs}{21}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Drivers}{21}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Data required}{21}{subsection.5.3}
+\contentsline {section}{\numberline {6}Effort Spent}{22}{section.6}
+\contentsline {subsection}{\numberline {6.1}Hours of work}{22}{subsection.6.1}
+\contentsline {section}{\numberline {7}References}{22}{section.7}
