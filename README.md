@@ -12,3 +12,5 @@ This is the project for the Software Engineering 2 course of M.Sc. course of Com
 **ITPD**: [Latest version] (https://github.com/matteo-bresich/se2-polimi-bresich/tree/master/ITPD/ITPD.pdf) - [Delivery] (https://github.com/matteo-bresich/se2-polimi-bresich/tree/master/Delivery/ITPD.pdf)
 
 **PP**: [Latest version] (https://github.com/matteo-bresich/se2-polimi-bresich/tree/master/PP/PP.pdf) - [Delivery] (https://github.com/matteo-bresich/se2-polimi-bresich/tree/master/Delivery/PP.pdf)
+
+**CI**: [Latest version] (https://github.com/matteo-bresich/se2-polimi-bresich/tree/master/CI/CI.pdf) - [Delivery] (https://github.com/matteo-bresich/se2-polimi-bresich/tree/master/Delivery/CI.pdf)

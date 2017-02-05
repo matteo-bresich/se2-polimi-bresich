@@ -1,0 +1,11 @@
+
+Qsquid:S1854"=Remove this useless assignment to local variable "localeObj".(ÿ’á
+
+osquid:S00122"TAt most one statement is allowed per line, but 2 statements were found on this line.(’ÔÏ–øÿÿÿÿ
+qsquid:S1188"\Reduce this anonymous class number of lines from 39 to at most 20, or make it a named class.(’úçé
+ësquid:S1598"ĞThis file "OfbizAmountTransform.java" should be located in "org\apache\ofbiz\webapp\ftl" directory, not in "C:\Users\Matteo\Google Drive\Polimi\Ingegneria del Software 2\Project\develop\Code Inspection\Code".(‘‹Í¢ûÿÿÿÿ
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‚›Ã€ûÿÿÿÿ
+9squid:S1166"%Either log or rethrow this exception.(±úã'
+jsquid:S00122"TAt most one statement is allowed per line, but 2 statements were found on this line.(ü‚İù
+Lsquid:S1197"8Move the array designator from the variable to the type.(£ïV
+osquid:S00122"TAt most one statement is allowed per line, but 2 statements were found on this line.(ç©‘–şÿÿÿÿ
